@@ -1,0 +1,11 @@
+@import "./normalize.css";
+@import "./components.css";
+
+:root {
+    --background: #F5F5F5;
+    --primary:
+}
+
+body {
+    background-color: var(--background);
+}
