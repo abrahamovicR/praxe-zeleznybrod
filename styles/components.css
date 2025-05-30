@@ -42,7 +42,9 @@
 
 main {
     flex-grow: 1;
-}.c-header {
+}
+
+.c-header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
