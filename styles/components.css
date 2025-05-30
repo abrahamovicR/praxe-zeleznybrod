@@ -80,3 +80,33 @@ main {
     display: grid;
     gap: 1rem;
 }
+
+main {
+    flex-grow: 1;
+}
+
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: var(--primary);
+}
+
+.logo {
+    display: block;
+    height: 55px;
+    width: auto;
+}
+
+@media (min-width: 1200px) {
+    .c-header {
+        padding: 1em 2em;
+    }
+}
+
+.c-image {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
