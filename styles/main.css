@@ -1,5 +1,6 @@
 @import "./normalize.css";
 @import "./components.css";
+@import "./typography.css";
 
 :root {
     --background: #F5F5F5;
