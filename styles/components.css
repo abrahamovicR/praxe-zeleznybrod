@@ -15,9 +15,20 @@ main {
     width: auto;
 }
 
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+
+
 @media (min-width: 1200px) {
     .c-header {
         padding: 1em 2em;
+    }
+
+    .logo {
+        height: 70px;
     }
 }
 

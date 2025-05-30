@@ -30,6 +30,7 @@ main {
 .hero__image {
     filter: brightness(60%);
     max-height: 800px;
+    object-fit: cover;
 }
 
 .hero__title {
