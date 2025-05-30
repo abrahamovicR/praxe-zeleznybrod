@@ -1,0 +1,135 @@
+:root {
+    --rotate-time: .15s;
+    --move-time: .15s;
+    --primary: #327DC3;
+    --secondary: #2E72B2;
+    --white: #F5F5F5;
+}
+
+.hamburger {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    display: block;
+}
+
+.hamburger span {
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 4.5px;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0px;
+    transition: linear var(--rotate-time);
+    rotate: 0deg;
+}
+
+.hamburger span:nth-child(2) {
+    top: 18px;
+    transition: transform var(--rotate-time);
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0px;
+    transition: linear var(--rotate-time);
+    rotate: 0deg;
+}
+
+@media screen and (max-width: 1099px) {
+
+    .hamburger.active span:nth-child(1) {
+        transition: linear var(--rotate-time);
+        rotate: 45deg;
+        top: 18px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+        transition: linear var(--move-time);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transition: linear var(--rotate-time);
+        rotate: -45deg;
+        bottom: 18px;
+    }
+
+    .hamburger-nav {
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform var(--move-time) ease;
+    }
+
+    .hamburger-nav.active {
+        transform: scaleY(1);
+    }
+
+    .hamburger-content {
+        border-bottom: solid 3px var(--secondary);
+    }
+
+    .hamburger-content:first-child {
+        border-top: solid 3px var(--secondary);
+    }
+
+    .hamburger-nav li {
+        padding: 0.5em;
+    }
+
+}
+
+.hamburger-row {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.hamburger-nav {
+    background-color: var(--primary);
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.hamburger-nav menu {
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger-nav li {
+    list-style: none;
+    width: 100%;
+}
+
+.hamburger__link {
+    display: block;
+}
+
+@media (min-width: 1100px) {
+    .hamburger-row {
+        display: none;
+    }
+
+    .hamburger-nav menu li:nth-child(2) {
+        border-right: solid 3px var(--secondary);
+        border-left: solid 3px var(--secondary);
+    }
+
+    .hamburger-nav {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .hamburger-nav menu {
+        display: flex;
+        justify-content: space-around;
+    }
+}
