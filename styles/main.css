@@ -24,14 +24,20 @@ main {
 }
 
 .hero {
-    max-height: 800px;
+    position: relative;
 }
 
 .hero__image {
-    filter: brightness(70%);
+    filter: brightness(60%);
+    max-height: 800px;
 }
 
 .hero__title {
     position: absolute;
-    
+    bottom: 1.5em;
+    left: 1.5em;
+}
+
+.hero__title h1 {
+    margin-bottom: 0.5em;
 }
