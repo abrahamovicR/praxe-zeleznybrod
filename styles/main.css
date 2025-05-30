@@ -1,4 +1,6 @@
 @import "./normalize.css";
+@import "./typography.css";
+@import "./hamburger.css";
 @import "./components.css";
 
 :root {
@@ -12,8 +14,23 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: var(--background);
+    margin: 0;
+    padding: 0;
 }
 
 main {
     flex-grow: 1;
+}
+
+.hero {
+    max-height: 800px;
+}
+
+.hero__image {
+    filter: brightness(70%);
+}
+
+.hero__title {
+    position: absolute;
+    
 }
