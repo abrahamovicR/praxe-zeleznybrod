@@ -54,7 +54,7 @@ main {
     flex-direction: column;
 }
 
-.page__info-wrapper {   
+.page__info-wrapper {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: grid;
@@ -65,8 +65,84 @@ main {
     margin: 1.5rem auto;
 }
 
+.page__about {
+    color: var(--black);
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.page__about>p {
+    margin: 1rem 0;
+}
+
+.page__about>h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.page__contacts {
+    color: var(--black);
+    margin: 0 2rem;
+}
+
+.page__contacts>h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.page__contacts>p {
+    margin: 1rem 0;
+}
+
+.contacts__info {
+    margin: 1.5rem 0;
+}
+
+.institutes {
+    margin: 0;
+    opacity: 0.6;
+}
+
+.page__opening {
+    color: var(--black);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contacts__map {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.opening-hours {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
 @media (min-width: 1200px) {
     .page__info-wrapper {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .page__about {
+        max-width: 1200px;
+    }
+
+    .page__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page__contacts>h1 {
+        text-align: left;
+    }
+
+    .page__contacts {
+        color: var(--black);
+        margin: 0 3rem;
     }
 }
