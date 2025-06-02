@@ -267,3 +267,12 @@ main {
             "img button";
     }
 }
+
+.calendar__title {
+    padding: 1rem;;
+}
+
+.calendar__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
