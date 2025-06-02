@@ -71,7 +71,7 @@ main {
     padding-left: 1rem;
     position: absolute;
     left: 0;
-    right: 0;
+    right: 0; 
 }
 
 .footer__link {
@@ -112,6 +112,12 @@ main {
     color: var(--background);
 }
 
+.footer__content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .c-image {
     display: block;
     width: 100%;
@@ -127,7 +133,7 @@ main {
 }
 
 .news__image {
-    max-width: 200px;
+    max-width: 150px;
     width: auto;
     object-fit: cover;
 }
@@ -135,6 +141,9 @@ main {
 .news__text {
     color: var(--black);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .news__text p {
@@ -151,6 +160,7 @@ main {
         flex-direction: row;
         max-height: 200px;
         min-width: 380px;
+        
     }
 }
 
