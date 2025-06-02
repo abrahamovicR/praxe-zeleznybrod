@@ -195,13 +195,36 @@ main {
 .news__img {
     grid-area: img;
     max-width: 400px;
+    margin: 0 auto;
 }
 
 .news__content {
     grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .news__button {
     grid-area: button;
-    align-self: right;
+}
+.news__next {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media (min-width: 1200px) {
+
+    .news__container {
+        grid-template-areas:
+            "img h1"
+            "img content"
+            "img button";
+    }
+
+    .news__h1 {
+        text-align: left;
+    }
 }
