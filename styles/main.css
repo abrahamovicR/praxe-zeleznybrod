@@ -50,8 +50,6 @@ main {
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    display: grid;
-    flex-direction: column;
 }
 
 .page__info-wrapper {
@@ -82,7 +80,7 @@ main {
 
 .page__contacts {
     color: var(--black);
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .page__contacts>h1 {
@@ -130,18 +128,60 @@ main {
     margin-bottom: 1rem;
 }
 
-.page__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.page__tips>h2 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
+
+.tips__img {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
+}
+
+
 
 @media (min-width: 1200px) {
     .page__info-wrapper {
         grid-template-columns: repeat(3, 1fr);
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .hero__title {
         padding: 3rem;
+    }
+
+    .page__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 700px);
+        justify-content: center;
+    }
+
+    .page__tips {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tips__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 500px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .tips__container>div {
+        max-width: 500px;
+    }
+
+    .page__about>h1 {
+        text-align: left;
+    }
+
+    .page__about {
+        margin: 0 auto;
     }
 }
 
@@ -163,6 +203,8 @@ main {
     .news__section {
         flex-direction: row;
         gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .news__grid {
@@ -207,24 +249,5 @@ main {
 
 .news__button {
     grid-area: button;
-}
-.news__next {
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-@media (min-width: 1200px) {
-
-    .news__container {
-        grid-template-areas:
-            "img h1"
-            "img content"
-            "img button";
-    }
-
-    .news__h1 {
-        text-align: left;
-    }
+    align-self: right;
 }
