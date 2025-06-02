@@ -80,7 +80,7 @@ main {
 
 .page__contacts {
     color: var(--black);
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .page__contacts>h1 {
@@ -154,7 +154,8 @@ main {
 
     .page__grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 700px);
+        justify-content: center;
     }
 
     .page__tips {
@@ -202,6 +203,8 @@ main {
     .news__section {
         flex-direction: row;
         gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .news__grid {
