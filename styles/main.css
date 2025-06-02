@@ -8,6 +8,7 @@
     --background: #F5F5F5;
     --primary: #327DC3;
     --secondary: #2E72B2;
+    --black: #000000;
 }
 
 body {
@@ -31,6 +32,7 @@ main {
     filter: brightness(60%);
     max-height: 800px;
     object-fit: cover;
+    object-position: top;
 }
 
 .hero__title {
