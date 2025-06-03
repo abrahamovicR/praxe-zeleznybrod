@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main main__width">
+        <h1 class="page__title">Kultura</h1>
+        <section class="culture__container">
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Městské divadlo</h2>
+                        <p class="culture__address">nám. 3.května 1, Železný Brod</p>
+                        <p>Divadlo se nachází v prvním poschodí radnice. Jeho kapacita je 320 míst. Divadelní sál byl
+                            vybudován
+                            v roce 1936 jako přístavba k budově radnice. Oponu pro městské divadlo namaloval malíř
+                            Vlastimil
+                            Rada společně s Václavem Rabasem. Rekonstruovaná opona se nyní nachází v městské galerii,
+                            současná
+                            opona je z rukou sochaře M. Hrachy. Divadlo využívají jak zájezdové scény, tak zdejší
+                            ochotnický
+                            spolek DS Tyl Železný Brod, o.s. </p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/divadlo.webp" alt="Beseda s PČR" class="culture__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>KC Kino</h2>
+                        <p class="culture__address">Husova 697, 468 22 Železný Brod</p>
+                        <p>Variabilní kulturní prostor pro 200 diváků. V pravidelných intervalech hrajeme pro malé děti
+                            i
+                            pro seniory, pro maminky na mateřské dovolené, pro mladé publikum, pro náročné diváky i pro
+                            ty,
+                            kdo si chtějí v kině hlavně odpočinout. Hrajeme až šestkrát týdně a to pro jakýkoliv počet
+                            diváků, cestu do kina tedy nikdy nebudete vážit zbytečně!</p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/kino1.webp" alt="Beseda s PČR" class="culture__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Městské muzeum</h2>
+                        <p class="culture__address">nám. 3. května 37, Železný Brod</p>
+                        <p>Městské muzeum má dvě expozice: sklářská expozice se nachází v tzv. Klemencovsku na náměstí,
+                            národopisná expozice potom v tzv. Bělišti. Sklářská expozice městského muzea představuje
+                            historii sklářské výroby na Železnobrodsku, proslulé železnobrodské figurky a galerii tavené
+                            skleněné plastiky světově proslulých výtvarníků Jaroslavy Brychtové a Stanislava Libenského.
+                        </p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/muzeum.webp" alt="Beseda s PČR" class="culture__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include "templates/partials/footer.html" %}
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
