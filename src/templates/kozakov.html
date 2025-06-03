@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main">
+        <section class="page__tips">
+            <div class="tips__container">
+                <div>
+                    <h1>Rozhledna Kozákov – nejvyšší vrchol Českého ráje</h1>
+                    <p>Kozákov (744 m n. m.) je dominantní vrchol ležící na pomezí Českého ráje a Jizerských hor,
+                        nedaleko od Železného Brodu. Na jeho vrcholu se nachází turistická rozhledna s dalekým výhledem
+                        do širokého okolí – při dobré viditelnosti je možné spatřit Krkonoše, Jizerské hory, Lužické
+                        hory, Orlické hory i Prahu.
+                    </p>
+                </div>
+                <img src="/src/img/kozakov.webp" class="tips__img">
+                <!--https://overenorodici.cz/detail-mista/p1196-rozhledna-kozakov-okres-semily-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Rozhledna a turistická chata</h2>
+                    <p>Součástí areálu na Kozákově je ocelová rozhledna postavená v roce 1995, vysoká 40 metrů. Ve
+                        spodní části se nachází turistická chata s restaurací a možností ubytování. V letních měsících
+                        je rozhledna oblíbeným cílem pěších i cyklistických výletů.
+                    </p>
+                </div>
+                <img src="/src/img/kozakov2.jpg" class="tips__img">
+                <!-- https://www.regiontourist.cz/ubytovani/riegrova-chata-kozakov/-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Geologická zajímavost a drahé kameny</h2>
+                    <p>Kozákov je známý také jako naleziště polodrahokamů – achátů, jaspisů a ametystů. Vrcholová oblast
+                        má geologický původ v třetihorním vulkanismu. V okolí se nachází naučné stezky věnované geologii
+                        i přírodním krásám.</p>
+                </div>
+                <img src="/src/img/kozakov3.jpeg" class="tips__img">
+                <!-- https://liberec.rozhlas.cz/v-soukromem-dole-v-kozakove-na-semilsku-se-stale-daji-najit-polodrahokamy-6008136-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Přístup a doprava</h2>
+                    <p>Na Kozákov se lze z Železného Brodu dostat několika způsoby – autem přes Hamštejn a Chuchelnu až
+                        na vrchol, nebo pěšky po značených turistických trasách. Výlet na Kozákov je vhodný i pro rodiny
+                        s dětmi a poskytuje jedinečný zážitek z výhledu na celé severovýchodní Čechy.
+                    </p>
+                </div>
+                <iframe style="border:none" src="https://mapy.com/s/ratehetofe" height="250" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+
+    {% include "templates/partials/footer.html" %}
+
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
