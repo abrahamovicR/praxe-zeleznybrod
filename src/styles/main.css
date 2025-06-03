@@ -36,8 +36,9 @@ main {
 
 .hero__title {
     position: absolute;
-    bottom: 40%;
-    left: 40%;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--background);
     text-align: center;
 }
@@ -45,10 +46,12 @@ main {
 .hero__title h1 {
     margin-bottom: 0.5em;
     font-size: 2.5rem;
+    white-space: nowrap;
 }
 
 .hero__title p {
     font-size: 1.5rem;
+    white-space: nowrap;
 }
 
 .page__info {
@@ -188,6 +191,10 @@ main {
         max-width: 500px;
     }
 
+    .tips__container h1, .tips__container h2 {
+        margin-bottom: 1rem;
+    }
+
     .page__about>h1 {
         text-align: left;
     }
@@ -256,7 +263,7 @@ main {
     grid-area: img;
     max-height: 200px;
     width: auto;
-    margin-right: 5rem;
+    margin: 0 auto;
     text-align: left;
 }
 
@@ -326,6 +333,10 @@ main {
             "img h1"
             "img content"
             "img button";
+    }
+
+    .news__img {
+        margin-right: 5rem;
     }
 
     .culture {
