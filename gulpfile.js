@@ -19,7 +19,7 @@ function getData() {
 
 // Render task
 function render() {
-  return gulp.src(['src/templates/*.html', '!src/templates/layout.html'])
+  return gulp.src(['src/templates/*.html', 'src/templates/**/*.html', '!src/templates/layout.html'])
     .pipe(plumber())
     .pipe(data(getData))
     .pipe(nunjucksRender({

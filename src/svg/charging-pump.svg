@@ -1,0 +1,9 @@
+<svg width="660" height="680" viewBox="0 0 660 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M350 660H400C422.09 660 440 642.09 440 620C440 597.91 422.09 580 400 580H60C37.91 580 20 597.91 20 620C20 642.09 37.91 660 60 660H290" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70 580V60C70 37.91 87.91 20 110 20H350C372.09 20 390 37.91 390 60V580" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M290 260H170C147.91 260 130 242.09 130 220V120C130 97.91 147.91 80 170 80H290C312.09 80 330 97.91 330 120V220C330 242.09 312.09 260 290 260Z" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 330H480C502.09 330 520 347.91 520 370V455C520 474.33 535.67 490 555 490C574.33 490 590 474.33 590 455V270" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M540 240V230C540 213.43 553.43 200 570 200H610C626.57 200 640 213.43 640 230V240C640 256.57 626.57 270 610 270H570C553.43 270 540 256.57 540 240Z" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M560 170V201.71" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M620 170V201.71" stroke="#327DC3" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

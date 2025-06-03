@@ -36,13 +36,19 @@ main {
 
 .hero__title {
     position: absolute;
-    bottom: 1.5em;
-    left: 1.5em;
+    bottom: 40%;
+    left: 40%;
     color: var(--background);
+    text-align: center;
 }
 
 .hero__title h1 {
     margin-bottom: 0.5em;
+    font-size: 2.5rem;
+}
+
+.hero__title p {
+    font-size: 1.5rem;
 }
 
 .page__info {
@@ -233,7 +239,7 @@ main {
         "button";
     align-items: center;
     margin: 1em;
-    gap: 1em;
+    gap: 2em;
     justify-content: end;
 }
 
@@ -248,8 +254,10 @@ main {
 
 .news__img {
     grid-area: img;
-    max-width: 400px;
-    margin: 0 auto;
+    max-height: 200px;
+    width: auto;
+    margin-right: 5rem;
+    text-align: left;
 }
 
 .news__content {
@@ -271,6 +279,14 @@ main {
     padding: 1rem;
 }
 
+#news__list {
+    list-style: none;
+    display: flex;
+}
+
+#news__list li {
+    padding-left: 1em;
+}
 
 
 
