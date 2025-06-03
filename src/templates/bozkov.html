@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main">
+        <section class="page__tips">
+            <div class="tips__container">
+                <div>
+                    <h1>Bozkovské dolomitové jeskyně</h1>
+                    <p>Bozkovské dolomitové jeskyně se nacházejí poblíž obce Bozkov u Semil. Jedná se
+                        o jediné veřejnosti přístupné dolomitové jeskyně v České republice. Nabízejí jedinečný zážitek
+                        díky bohaté krápníkové výzdobě a největšímu podzemnímu jezeru v Čechách.</p>
+                </div>
+                <img src="/src/img/bozkov.jpg" class="tips__img">
+                <!--https://www.casopis.ochranaprirody.cz/vyzkum-a-dokumentace/bozkovske-dolomitove-jeskyne-50-let-od-zpristupneni-verejnosti/-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Historie a přírodní zajímavosti</h2>
+                    <p>Bozkovské dolomitové jeskyně byly objeveny v roce 1947 při těžbě vápence. Jsou to jediné
+                        zpřístupněné dolomitové jeskyně v České republice. Jeskyně jsou známé svou unikátní krápníkovou
+                        výzdobou a největším podzemním jezerem v Čechách s průzračnou modrozelenou vodou.</p>
+                </div>
+                <img src="/src/img/bozkov2.jpg" class="tips__img">
+                <!--https://cesky.radio.cz/bozkovske-jeskyne-skryvaji-nejvetsi-podzemni-jezero-v-cesku-8132056-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Prohlídkový okruh</h2>
+                    <p>Prohlídková trasa měří přibližně 350 metrů a je nenáročná, vhodná i pro rodiny s dětmi. Během
+                        prohlídky uvidíte různé krápníkové útvary, jako jsou stalaktity, stalagmity a stalagnáty.
+                        Největším lákadlem je podzemní jezero, které se nachází 22 metrů pod zemí a má rozlohu 24 × 14
+                        metrů.</p>
+                </div>
+                <img src="/src/img/bozkov3.jpg" class="tips__img">
+                <!--https://bozkovske.caves.cz/prohlidka-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Přístup a doprava</h2>
+                    <p>Do Bozkova se dostanete autem po silnici z Semil nebo Železného Brodu. Parkoviště se nachází asi
+                        10 minut chůze od vstupu do jeskyní. Vstupenky je doporučeno rezervovat předem, zejména během
+                        letní sezóny, kdy je vysoká návštěvnost.</p>
+                </div>
+                <iframe style="border:none" src="https://mapy.com/s/lezasutova" height="250" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+
+    {% include "templates/partials/footer.html" %}
+
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>

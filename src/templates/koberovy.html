@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main">
+        <section class="page__tips">
+            <div class="tips__container">
+                <div>
+                    <h1>Koberovy – brána do přírody Českého ráje</h1>
+                    <p>Obec Koberovy, která leží jen několik kilometrů jihovýchodně od Železného Brodu, představuje
+                        ideální výchozí bod pro objevování krás Maloskalska a severní části Českého ráje. Tato klidná
+                        podkrkonošská obec nabízí malebné scenérie, přírodní památky i tradiční venkovskou architekturu.
+                    </p>
+                </div>
+                <img src="/src/img/koberovy.jpg" class="tips__img">
+                <!--https://liberecka.drbna.cz/zpravy/spolecnost/19218-nad-koberovy-mela-vyrust-rozhledna-dodnes-tam-nestoji-jednou-ale-mozna-bude.html-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Turistika a přírodní zajímavosti</h2>
+                    <p>Z Koberov vede několik značených turistických tras – například k Besedickým skalám, na Malou
+                        Skálu nebo k vyhlídkám na Suché skály. Oblast je oblíbená mezi pěšími turisty i cyklisty a
+                        nabízí nádherné výhledy na krajinu Jizerských hor a Českého ráje.</p>
+                </div>
+                <img src="/src/img/bozkov2.jpg" class="tips__img">
+                <!--https://cesky.radio.cz/bozkovske-jeskyne-skryvaji-nejvetsi-podzemni-jezero-v-cesku-8132056-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Kulturní a místní život</h2>
+                    <p>Koberovy si zachovávají svůj venkovský ráz. Najdete zde nejen kostel sv. Václava, ale také
+                        roubené chalupy a bohaté kulturní dění v průběhu roku – od poutí po menší místní slavnosti. Obec
+                        je známá přátelským prostředím a pohostinností.</p>
+                </div>
+                <img src="/src/img/bozkov3.jpg" class="tips__img">
+                <!--https://bozkovske.caves.cz/prohlidka-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Přístup a doprava</h2>
+                    <p>Do Koberov se snadno dostanete autem i pěšky z centra Železného Brodu. Obec je dobře dostupná po
+                        silnici směrem na Malou Skálu. V letní sezóně tudy prochází množství turistů směřujících do
+                        skalních měst a okolních přírodních rezervací.
+
+                    </p>
+                </div>
+                <iframe style="border:none" src="https://mapy.com/s/femunaduja" height="250" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+
+    {% include "templates/partials/footer.html" %}
+
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
