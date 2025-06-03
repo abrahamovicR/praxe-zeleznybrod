@@ -25,6 +25,7 @@ main {
 .header__link {
     color: var(--background);
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .dropdown {
