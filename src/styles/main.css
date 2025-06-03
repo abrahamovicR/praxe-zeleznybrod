@@ -321,4 +321,9 @@ main {
     .page__contacts>h1 {
         text-align: left;
     }
+
+    .about__section {
+        display: flex;
+        gap: 100px;
+    }
 }
