@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main main__width">
+        <h1 class="page__title">Obchody</h1>
+        <section class="culture__container">
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Penny Market</h2>
+                        <p class="culture__address">Průmyslová 874, Železný Brod</p>
+                        <p><b>Otevírací doba</b></p>
+                        <p>Pondělí - Neděle: 7:00-20:00</p>
+                 
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/penny.webp" alt="Penny Market" class="culture__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Lidl</h2>
+                        <p class="culture__address">Průmyslová 897, 468 22 Železný Brod</p>
+                        <p><b>Otevírací doba</b></p>
+                        <p>Pondělí - Sobota: 7:00-21:00</p>
+                        <p>Neděle: 8:00-21:00</p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/lidl.webp" alt="Lidl" class="culture__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>NORMA</h2>
+                        <p class="culture__address">nám. 3. května 738, Železný Brod</p>
+                        <p><b>Otevírací doba</b></p>
+                        <p>Pondělí - Pátek: 7:00-20:00</p>
+                        <p>Sobota - Neděle: Zavřeno</p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/norma.webp" alt="NORMA" class="culture__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>DETESK s.r.o.</h2>
+                        <p class="culture__address">nám. 3. května 20, 468 22 Železný Brod</p>
+                        <p><b>Otevírací doba</b></p>
+                        <p>Pondělí - Neděle: 9:00-17:00</p>
+                 
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/detesk.webp" alt="Penny Market" class="culture__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include "templates/partials/footer.html" %}
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
