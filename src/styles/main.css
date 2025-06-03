@@ -146,6 +146,7 @@ main {
 }
 
 
+
 @media (min-width: 1200px) {
     .page__info-wrapper {
         grid-template-columns: repeat(3, 1fr);
@@ -207,6 +208,7 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
