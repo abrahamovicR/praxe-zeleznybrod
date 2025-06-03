@@ -281,7 +281,6 @@ main {
 
 .culture__card {
     margin: 2rem;
-    display: flex;
     border-bottom: 3px solid var(--primary);
 }
 
@@ -291,7 +290,7 @@ main {
 }
 
 .culture__img {
-    width: auto;
+    width: 200px;
     height: 150px;
     display: block;
     margin-left: auto;
@@ -303,6 +302,7 @@ main {
     margin-bottom: 0.5rem;
     opacity: 0.6;
 }
+
 
 @media (min-width: 1200px) {
     .news__container {
