@@ -176,7 +176,8 @@ main {
 
     .page__grid {
         display: grid;
-        grid-template-columns: repeat(2, 700px);
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1400px;
         justify-content: center;
     }
 
@@ -386,6 +387,24 @@ main {
 .news__section {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.img-with-info {
+  position: relative;
+  display: inline-block;
+}
+ 
+.info-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--background);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
