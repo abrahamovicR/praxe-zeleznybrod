@@ -163,6 +163,10 @@ main {
 .about__us {
     margin: 1rem 2rem;
 }
+.creators__container {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 @media (min-width: 1200px) {
