@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main main__width">
+        <h1 class="page__title">Ostatní služby</h1>
+        <section class="culture__container">
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Beauty Salon FREEDOM</h2>
+                        <p class="culture__address">Štefánikova 879, 468 22 Železný Brod</p>
+                        <p>Provozuji kadeřnický salon. Nabízím kadeřnické služby. Provádím stříhání, barvení,
+                            melírování, prodlužování a zhuštování vlasů pomocí keratinu. Používám americkou vlasovou
+                            kosmetiku značky MATRIX. Poskytuji poradenství.
+                        </p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/freedomsalon.webp" alt="Beauty Salon FREEDOM" class="culture__img">
+                        <!--https://www.firmy.cz/detail/2372980-beauty-salon-freedom-zelezny-brod.html-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Pánské holičství Many</h2>
+                        <p class="culture__address">Husova 41, Železný Brod</p>
+                        <p>Jsme Many, pánské holičství, které spojuje tradiční řemeslo s moderním stylem. Naším cílem je
+                            nabídnout každému muži nejen perfektní střih nebo úpravu vousů, ale také místo, kde si může
+                            odpočinout a načerpat energii.</p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/many.webp" alt="Pánské holičství Many" class="culture__img">
+                        <!--https://many-holicstvi.cz/galerie/-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>TAXI-S</h2>
+                        <p class="culture__address">+420 776 290 290</p>
+                        <p>Přeprava osob a zavazadel. Dle telefonické dohody. V dopoledních hodinách pouze na objednávku
+                            den předem.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    {% include "templates/partials/footer.html" %}
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>

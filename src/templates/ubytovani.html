@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main main__width">
+        <h1 class="page__title">Ubytování</h1>
+        <section class="culture__container">
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Hotel Veselý</h2>
+                        <p class="culture__address"> Štefánikova 416, 468 22 Železný Brod</p>
+                        <p>Celá restaurační a hotelová část
+                            prošla velkou rekostrukcí. Nyní zde máme moderní restauraci pro 35 lidí, salonek pro dvacet
+                            a velká, krytá letní terasa pro 40 lidí a v hotelové části je osm nových moderních pokojů.
+                        </p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/vesely.webp" alt="Hotel Veselý" class="culture__img">
+                        <!--https://www.hotelvesely.cz/-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Penzion Formanka</h2>
+                        <p class="culture__address">Splzov 29, 468 22 Železný Brod</p>
+                        <p>Formanka je restaurační a ubytovací zařízení stojící na hlavním silničním tahu E65 z Prahy do
+                            Krkonoš a dál do Polska. Nachází mezi Turnovem a Železným Brodem asi 90 km od Prahy v obci
+                            Splzov, na samém začátku Českého ráje, 2 km od Malé Skály.</p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/penzionformanka.webp" alt="Penzion Formanka" class="culture__img">
+                        <!--https://www.formanka.cz/fotogalerie/-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Hotel Starý Mlýn</h2>
+                        <p class="culture__address">Štefánikova 89, 468 22 Železný Brod</p>
+                        <p>V září roku 1956 byla v Železném Brodě založena Základní hudební škola (tehdy ještě jako
+                            pobočka Základní hudební školy v Semilech). Letošní školní rok (2006/2007) je tedy jubilejní
+                            50. rok existence školy.</p>
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/starymlyn.webp" alt="Hotel Starý Mlýn" class="culture__img">
+                        <!--https://www.e-chalupy.cz/ubytovani-zelezny-brod-penzion-stary-mlyn-o1710-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture__card">
+                <div class="culture">
+                    <div class="culture__info">
+                        <h2>Ubytování U Zvonice</h2>
+                        <p class="culture__address">Husova 144, 468 22 Železný Brod</p>
+                        <p>Nabízíme ubytování ve dvou pokojích s vlastním sociálním zařízením, TV a připojením k
+                            internetu.
+                        </p>
+                        <p>Další služby: Wi-Fi, Stravování, Parkoviště</p>
+
+                    </div>
+                    <div class="culture__footer">
+                        <img src="/src/img/zvonice.webp" alt="Ubytování U Zvonice" class="culture__img">
+                        <!--https://www.firmy.cz/detail/12723070-u-zvonice-zelezny-brod.html-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    {% include "templates/partials/footer.html" %}
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
