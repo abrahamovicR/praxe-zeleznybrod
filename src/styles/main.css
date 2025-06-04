@@ -65,6 +65,13 @@ main {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 600px) {
+    .page__info-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 .info__img {
@@ -191,7 +198,8 @@ main {
         max-width: 500px;
     }
 
-    .tips__container h1, .tips__container h2 {
+    .tips__container h1,
+    .tips__container h2 {
         margin-bottom: 1rem;
     }
 
@@ -209,12 +217,6 @@ main {
     }
 }
 
-.news__section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
 
 .news__grid {
     display: grid;
@@ -225,12 +227,6 @@ main {
 }
 
 @media (min-width: 1200px) {
-    .news__section {
-        flex-direction: row;
-        gap: 2rem;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
 
     .news__grid {
         grid-template-columns: repeat(3, 1fr);
@@ -304,7 +300,7 @@ main {
 
 
 
-.calendar__container {
+.calendar__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
@@ -359,5 +355,41 @@ main {
     .about__section {
         display: flex;
         gap: 100px;
+    }
+}
+
+.calendar__section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.h1__section {
+    margin: 1rem;
+}
+
+.calendar__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.news__section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .calendar__container {
+        flex-direction: row;
+    }
+
+    .news__flex {
+        flex-direction: row;
     }
 }
