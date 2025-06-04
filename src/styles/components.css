@@ -248,11 +248,19 @@ main {
 
 .calendar__card {
     margin: 1em;
-    padding: 0;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     border-bottom: 3px solid var(--primary);
+}
+
+.calendar__card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .calendar__text {
@@ -265,9 +273,5 @@ main {
 .calendar__footer {
     display: flex;
     justify-content: space-between;
-}
-
-.calendar__image {
-    max-height: 80px;
-    width: auto;
+    height: 100%;
 }

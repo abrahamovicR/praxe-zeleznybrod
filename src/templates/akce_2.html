@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main main__width">
+        <div>
+            <section class="news__container">
+                <h1 class="news__h1">Letní Sklářská dílna</h1>
+                <a href="/src/img/LSD2025.jpg" class="calendar__a">
+                    <img src="/src/img/LSD2025.jpg" alt="Plakát pro LSD2025" class="c-image calendar__img"
+                        title="Zdroj: https://example.com">
+                    <!-- https://www.zeleznybrod.cz/cz/aktualne/kalendar-akci/detail-akce.html?eventId=81607#prettyPhoto -->
+                </a>
+                <div class="news__content">
+                    <p>LSD 2025 - Kreativní dialog umělců a sklářských řemeslníků, aktuální přístupy ve sklářské tvorbě,
+                        experimentální technologie v praxi, inspirace pro žáky sklářské školy i jejich pedagogy – takto
+                        lze charakterizovat již 14. ročník sklářského sympozia Letní sklářská dílna, které se bude konat
+                        10.–11. června v Železném Brodě. Pouze několik dní budou mít umělci k tomu, aby ve spolupráci se
+                        sklářskými řemeslníky převedli svou ideu do skleněného materiálu. Realizace se uskuteční v
+                        převažující míře v železnobrodské sklářské škole. Své technologické zázemí, materiál a ruce
+                        sklářů poskytne pro jednoho z účastníků sympozia, již posedmé, sklářská firma Detesk.
+                    </p>
+                    <p>
+                        Veřejnosti bude zpřístupněna nejatraktivnější část průběhu sympozia – tvorba umělců ve školní
+                        sklářské huti – a to ve dnech 17. – 19. června. Volně dostupné budou také přednášky o tvorbě
+                        jednotlivých umělců. Tyto autorské prezentace se uskuteční v aule sklářské školy ve dnech 20. a
+                        21. června 2025.
+                    </p>
+                    <div class="calendar__text">
+                        <p>Datum a čas: od 06.06.2025 18:30 do 08.06.2025</p>
+                        <p>Místo konání: Železný Brod</p>
+                    </div>
+                </div>
+                <a href="javascript:history.back()" class="c-button news__button">Zpět</a>
+            </section>
+
+            <section class="news__next">
+                <h2>Další akce</h2>
+
+                <div class="calendar__card calendar__index">
+                    <a class="a h2" href="/akce_1.html">Železnobrodský jarmark</a>
+                    <p>Tradiční slavnost s neopakovatelnou atmosférou. Ulice města ožívají stánky s řemeslnými výrobky,
+                        regionálními specialitami a zábavným programem pro celou rodinu. Těšit se můžete na živou hudbu,
+                        divadelní vystoupení, atrakce pro děti a ukázky tradičních řemesel.
+                        Přijďte zažít den plný chutí, barev a radosti v srdci sklářského města!
+                    </p>
+                    <div class="calendar__footer">
+                        <div class="calendar__text">
+                            <p>Datum a čas: od 06.06.2025 18:30 do 08.06.2025</p>
+                            <p>Místo konání: Železný Brod</p>
+                        </div>
+                        <a href="/akce_1.html" class="c-button c-news__button">Přečíst</a>
+                    </div>
+                </div>
+
+                <div class="calendar__card calendar__index">
+                    <a class="a h2">Těpeřský vědomostní kvíz</a>
+                    <p>
+                        Kvíz se skládá z otázek ze 4 zajímavých okruhů.
+                        Tématem těchto okruhů může být skutečně cokoliv - od sportu přes zeměpis do kuchyně ke kultuře a
+                        zábavě.
+                        Tak přijďte se s námi potrápit mozkové závity, nebo se něco zajímavého dozvědět
+                        Ten kdo vyhraje, s prázdnou neodejde
+                        Občerstvení je zajištěno, stejně tak jako dobré pivko, vínko a nealko.
+                    </p>
+                    <div class="calendar__footer">
+                        <div class="calendar__text">
+                            <p>Datum a čas: 14.06.2025 od 19:00 hodin</p>
+                            <p>Místo konání: Sokolovna Těpeře</p>
+                        </div>
+                        <a href="/akce_3.html" class="c-button c-news__button">Přečíst</a>
+                    </div>
+                </div>
+
+            </section>
+    </main>
+
+
+    {% include "templates/partials/footer.html" %}
+
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
