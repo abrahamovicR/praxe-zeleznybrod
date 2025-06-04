@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/src/svg/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/src/styles/main.css">
+    <title>Město Železný Brod</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main">
+        <section class="page__tips">
+            <div class="tips__container">
+                <div>
+                    <h1>Greenway Jizera</h1>
+                    <p>Greenway Jizera je značená cyklotrasa, která sleduje tok řeky Jizery a spojuje řadu turisticky
+                        atraktivních míst mezi horami a Českým rájem. Vede i přes Železný Brod a představuje skvělou
+                        příležitost pro cyklovýlety, pěší túry i rodinné výlety s dětmi.
+                    </p>
+                </div>
+                <img src="/src/img/jizera.jpg" class="tips__img" alt="Riegrova stezka">
+                <!--http://www.greenway-jizera.cz/cs/co-navstivit-1/ -->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Trasa a zajímavosti na cestě</h2>
+                    <p>Greenway Jizera začíná v Jizerce v Jizerských horách a pokračuje přes Smržovku, Tanvald, Železný
+                        Brod, Malou Skálu až do Turnova a dál do oblasti Českého ráje. Cestou nabízí nádherné výhledy na
+                        řeku, lesy i historické památky. Na trase se nachází odpočívadla, informační tabule a několik
+                        mostů s výhledem na řeku.
+                    </p>
+                </div>
+                <img src="/src/img/jizera2.jpg" class="tips__img" alt="Greenway Jizera">
+                <!-- https://jablonecky.denik.cz/zpravy_region/cyklostezka-greenway-jizera-trasa-20210721.html-->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Greenway v okolí Železného Brodu</h2>
+                    <p>Úsek trasy mezi Líšným, Železným Brodem a Spálovem je oblíbený pro svůj přírodní charakter, nízký
+                        provoz a krásné scenérie Jizery, včetně romantických skalních úseků. V Železném Brodě je možné
+                        navázat na další turistické trasy nebo pokračovat směrem na Semily a Bozkov.</p>
+                </div>
+                <img src="/src/img/jizera3.jpg" class="tips__img" alt="Greenway Jizera u Dlaskova statku">
+                <!-- https://www.impuls.cz/regiony/liberecky-kraj/cykolostezka-jizera-nadeje-les.A170717_110604_imp-liberecky_kov/ -->
+            </div>
+            <div class="tips__container">
+                <div>
+                    <h2>Ideální pro cyklisty i pěší</h2>
+                    <p>Trasa je nenáročná a vhodná jak pro horská, tak i trekingová kola. Díky dobrému povrchu je
+                        vyhledávaná i rodinami s dětmi. Greenway Jizera je výborným způsobem, jak poznat krásy našeho
+                        regionu aktivním způsobem.
+                    </p>
+                </div>
+                <img src="/src/img/jizera4.png" class="tips__img" alt="Mapa Greenway Jizera" >
+                <!--http://www.greenway-jizera.cz/cs/jizera-cyklisticka/prejezd-cele-trasy-gw-jizera/vysoke-nad-jizerou-zelezny-brod-1.html-->
+            </div>
+        </section>
+    </main>
+
+
+    {% include "templates/partials/footer.html" %}
+
+
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>

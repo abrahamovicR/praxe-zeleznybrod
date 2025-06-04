@@ -295,6 +295,13 @@ main {
     padding-left: 1em;
 }
 
+.about__img {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+
+}
+
 
 
 .calendar__container {
