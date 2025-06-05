@@ -515,3 +515,13 @@ main {
     text-align: center;
     margin: 1rem 0;
 }
+
+.logo__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__footer img {
+    max-height: 50px;
+    width: auto;
+}
