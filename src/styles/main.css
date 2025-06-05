@@ -533,8 +533,14 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    height: 80vh;
 }
 
 .a__404 {
     text-decoration: underline;
+}
+
+.sad__image {
+    width: 50px;
+    height: auto;
 }
