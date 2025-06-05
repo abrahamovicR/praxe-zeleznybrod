@@ -535,12 +535,3 @@ main {
     gap: 1rem;
     padding: 10rem 0;
 }
-
-.a__404 {
-    text-decoration: underline;
-}
-
-.sad__image {
-    width: 50px;
-    height: auto;
-}
