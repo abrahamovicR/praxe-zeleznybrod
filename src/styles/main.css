@@ -533,5 +533,5 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 10rem 0;
+    padding: 10rem 1rem;
 }
