@@ -431,16 +431,18 @@ main {
 }
 
 .info-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: var(--background);
-    border: 2px solid var(--black);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 1em;
-    cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--background);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 1200px) {
