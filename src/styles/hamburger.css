@@ -22,7 +22,7 @@
     transform-origin: top;
     transition: transform var(--move-time) ease;
     position: absolute;
-    top: 87px;
+    top: calc(65px + 1rem);
     left: 0;
     right: 0;
     background-color: var(--primary);
