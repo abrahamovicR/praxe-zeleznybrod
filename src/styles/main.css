@@ -432,8 +432,10 @@ main {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  font-size: 1em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 1200px) {
