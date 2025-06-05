@@ -37,6 +37,7 @@
     "gulp-terser": "^2.1.0",
     "gulp-watch": "^5.0.1",
     "gulp-webp": "^5.0.0",
+    "postcss": "^8.5.4",
     "sass": "^1.89.1"
   }
 }

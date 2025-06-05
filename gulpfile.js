@@ -18,7 +18,7 @@ const cssnano = require("cssnano");
 // --- JS ---
 const terser = require("gulp-terser");
 
-// --- Next-gen obrĂˇzky ---
+// --- Next-gen obrázky ---
 //const webp = require("gulp-webp");
 const avif = require("gulp-avif");
 
@@ -26,18 +26,18 @@ const avif = require("gulp-avif");
 const paths = {
   templates: "src/templates/**/*.html",
   dataFile: "src/templates/data.json",
-  dest: "docs",
+  dest: "docs/",
   styles: "src/styles/*.css",
+  stylesDest: "docs/assets/css",
   scripts: "src/scripts/*.js",
-  stylesDest: "dist/assets/css",
-  scriptsDest: "dist/assets/js",
-  images: "src/img/*.{jpg,jpeg}",
-  imagesDest: "dist/assets/images",
+  scriptsDest: "docs/assets/js",
+  images: "src/img/",
+  imagesDest: "docs/assets/images",
 };
 
-// --- Ĺ ablony (Nunjucks) ---
+// --- Šablony (Nunjucks) ---
 function render() {
-  return src(["src/**/*.html", "!src/layout.html"])
+  return src([paths.templates])
     .pipe(plumber())
     .pipe(data(JSON.parse(fs.readFileSync(paths.dataFile))))
     .pipe(
@@ -48,7 +48,7 @@ function render() {
     .pipe(dest(paths.dest));
 }
 
-// --- SCSS â†’ CSS + autoprefix + minify ---
+// --- SCSS/CSS + autoprefix + minify ---
 function styles() {
   return src(paths.styles)
     .pipe(plumber())
@@ -62,16 +62,26 @@ function scripts() {
   return src(paths.scripts).pipe(plumber()).pipe(terser()).pipe(dest(paths.scriptsDest));
 }
 
-// --- Konverze obrĂˇzkĹŻ na WebP ---
-/*function imagesToWebp() {
-  return src(paths.images).pipe(plumber()).pipe(webp()).pipe(dest(paths.imagesDest));
-}*/
+// --- Konverze obrázků na WebP ---
+// function imagesToWebp() {
+//   return src(paths.images + '**/*.{jpg,jpeg,png}')
+//     .pipe(plumber())
+//     .pipe(webp())
+//     .pipe(dest(paths.imagesDest));
+// }
 
-// --- Konverze obrĂˇzkĹŻ na AVIF ---
+// --- Konverze obrázků na AVIF ---
 function imagesToAvif() {
-  return src(paths.images)
-    .pipe(plumber())
+  return src(paths.images + '**/*.{jpg,jpeg,png}')
+    //.pipe(plumber())
     .pipe(avif({ quality: 50 }))
+    .pipe(dest(paths.imagesDest));
+}
+
+// --- Kopírování ostatních obrázků (kromě JPG a PNG) ---
+function copyOtherImages() {
+  return src([paths.images + '*', '!' + paths.images + '/*.{jpg,jpeg,png}'], { encoding: false })
+    .pipe(plumber())
     .pipe(dest(paths.imagesDest));
 }
 
@@ -81,7 +91,7 @@ function watchFiles() {
   watch(paths.dataFile, render);
   watch(paths.styles, styles);
   watch(paths.scripts, scripts);
-  watch(paths.images, series(/*imagesToWebp,*/ imagesToAvif));
+  watch(paths.images, series(copyOtherImages, /*imagesToWebp, imagesToAvif*/));
 }
 
 // --- HTML lint ---
@@ -115,4 +125,4 @@ function htmlLintTask() {
 }
 
 // --- Default ---
-exports.default = series(render, styles, scripts, imagesToAvif, htmlLintTask, watchFiles);
+exports.default = series(render, styles, scripts, htmlLintTask, copyOtherImages,/*imagesToWebp, imagesToAvif,*/ watchFiles);
