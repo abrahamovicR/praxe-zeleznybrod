@@ -80,3 +80,4 @@ function htmlLintTask() {
 
 
 exports.default = series(render, htmlLintTask, watchFiles);
+

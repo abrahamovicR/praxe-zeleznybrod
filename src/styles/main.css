@@ -336,7 +336,7 @@ main {
 .about__img {
     width: 100%;
     max-width: 300px;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 .calendar__grid {
@@ -372,6 +372,13 @@ main {
     margin-top: 1rem;
 }
 
+.about__section {
+    margin: 1rem 0;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
 
 @media (min-width: 1200px) {
     .news__container {
@@ -397,7 +404,7 @@ main {
 
     .about__section {
         display: flex;
-        gap: 100px;
+        flex-direction: row;
     }
 }
 
