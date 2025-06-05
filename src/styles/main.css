@@ -314,7 +314,7 @@ main {
 
 .news__button {
     grid-area: button;
-    align-self: right;
+    align-self: flex-end;
 }
 
 .news__next {
