@@ -358,6 +358,7 @@ main {
     display: block;
     margin: 0 auto;
     margin-bottom: 0.5rem;
+    object-fit: cover;
 }
 
 .culture__address {
