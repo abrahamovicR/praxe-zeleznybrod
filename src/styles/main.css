@@ -76,6 +76,8 @@ main {
 
 .info__img {
     margin: 1.5rem auto;
+    height: 65px;
+    width: auto;
 }
 
 .page__about {
@@ -165,6 +167,7 @@ main {
 }
 
 .about__us {
+    padding-left: 2rem;
     margin: 2rem auto;
     max-width: 1400px;
     width: 100%;
@@ -192,6 +195,10 @@ main {
     width: 30px;
 }
 
+.page__grid {
+    padding-left: 2rem;
+}
+
 
 @media (min-width: 1200px) {
     .page__info-wrapper {
@@ -208,8 +215,8 @@ main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 1400px;
-        justify-content: center;
         margin: 0 auto;
+        gap: 5rem;
     }
 
     .page__tips {
@@ -419,10 +426,10 @@ main {
 }
 
 .img-with-info {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
- 
+
 .info-btn {
   position: absolute;
   top: 8px;
