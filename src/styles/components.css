@@ -46,8 +46,15 @@ main {
     text-align: center;
     background-color: var(--secondary);
     border-radius: 4px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
     padding: 0;
+    position: absolute;
+    left: -10px;
+    top: calc(86px - 1rem);
+    z-index: 100;
 }
 
 .dropdown-content li {
@@ -55,7 +62,9 @@ main {
 }
 
 .dropdown.active .dropdown-content {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .dropdown.active .dropdown-icon {
