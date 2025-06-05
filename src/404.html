@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="icon" href="/assets/images/logo-dark.svg" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <meta name="robots" content="index,follow">
+    <meta name="description"
+        content="Informace o školách a vzdělávacích institucích v Železném Brodě. Najděte základní školy, střední školy a další vzdělávací zařízení.">
+    <title>Železný Brod | Vzdělání</title>
+</head>
+
+<body>
+    {% include "templates/partials/header.html" %}
+
+    <main class="main main__404">
+        <img src="/assets/images/sad.svg" alt="Smuzný smajlík" class="c-image sad__image">
+        <h1>Stránka Nenalezena</h1>
+        <p>Omlouváme se, ale stránka, kterou hledáte, neexistuje nebo byla přesunuta.</p>
+        <p>Prosím, vraťte se na <a href="./index.html" class="a a__404">hlavní stránku</a> nebo použijte navigaci v horní
+            části stránky.</p>
+    </main>
+
+    {% include "templates/partials/footer.html" %}
+
+    <script src="/assets/js/hamburger.js"></script>
+</body>
+
+</html>

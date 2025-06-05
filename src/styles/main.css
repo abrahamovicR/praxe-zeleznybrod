@@ -526,3 +526,15 @@ main {
     max-height: 50px;
     width: auto;
 }
+
+.main__404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.a__404 {
+    text-decoration: underline;
+}
