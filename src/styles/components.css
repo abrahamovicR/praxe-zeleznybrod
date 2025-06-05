@@ -126,6 +126,7 @@ main {
 .footer__logo {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .footer__logo img {
@@ -154,6 +155,7 @@ main {
     margin-bottom: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    gap: 1rem;
 }
 
 .grid__category {
