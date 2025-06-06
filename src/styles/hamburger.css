@@ -17,6 +17,12 @@
     position: relative;
 }
 
+.header__link-btn {
+    appearance: none;
+    background: none;
+    border: none;
+}
+
 .hamburger-btn {
     appearance: none;
     background: none;
