@@ -19,6 +19,8 @@
 
 .hamburger-btn {
     appearance: none;
+    background: none;
+    border: none;
 }
 
 .hamburger-nav {
