@@ -26,6 +26,7 @@ const avif = require("gulp-avif");
 const paths = {
   templates: "src/templates/**/*.html",
   dataFile: "src/templates/data.json",
+  src: "src",
   dest: "docs/",
   styles: "src/styles/*.css",
   stylesDest: "docs/assets/css",
@@ -73,17 +74,25 @@ function scripts() {
 // --- Konverze obrázků na AVIF ---
 function imagesToAvif() {
   return src(paths.images + '**/*.{jpg,jpeg,png}')
-    //.pipe(plumber())
+    .pipe(plumber())
     .pipe(avif({ quality: 50 }))
     .pipe(dest(paths.imagesDest));
 }
 
-// --- Kopírování ostatních obrázků (kromě JPG a PNG) ---
-function copyOtherImages() {
-  return src([paths.images + '*', '!' + paths.images + '/*.{jpg,jpeg,png}'], { encoding: false })
+// --- Kopírování ostatních assetů ---
+function copyStaticAssets() {
+  return src([
+    paths.src + '/**/*',
+    '!' + paths.src + '/templates/**/*.html',
+    '!' + paths.src + '/styles/**/*',
+    '!' + paths.src + '/scripts/**/*',
+    '!' + paths.src + '/img/**/*.{jpg,jpeg,png}',
+    '!' + paths.src + '/data.json'
+  ], { encoding: false })
     .pipe(plumber())
-    .pipe(dest(paths.imagesDest));
+    .pipe(dest(paths.dest));
 }
+
 
 // --- Watcher ---
 function watchFiles() {
@@ -91,7 +100,8 @@ function watchFiles() {
   watch(paths.dataFile, render);
   watch(paths.styles, styles);
   watch(paths.scripts, scripts);
-  watch(paths.images, series(copyOtherImages, /*imagesToWebp, imagesToAvif*/));
+  watch(paths.images, series(/*imagesToWebp,*/ imagesToAvif));
+  watch(paths.src + '/**/*', copyStaticAssets);
 }
 
 // --- HTML lint ---
@@ -125,4 +135,4 @@ function htmlLintTask() {
 }
 
 // --- Default ---
-exports.default = series(render, styles, scripts, htmlLintTask, copyOtherImages,/*imagesToWebp, imagesToAvif,*/ watchFiles);
+exports.default = series(render, styles, scripts, htmlLintTask,/*imagesToWebp, imagesToAvif,*/ copyStaticAssets, watchFiles);
