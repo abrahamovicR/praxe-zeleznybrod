@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.hamburger-btn {
+    appearance: none;
+}
+
 .hamburger-nav {
     transform: scaleY(0);
     transform-origin: top;

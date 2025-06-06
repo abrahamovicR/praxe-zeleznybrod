@@ -3,3 +3,5 @@ Disallow: /
 
 User-agent: *
 Disallow:
+
+Sitemap: https://www.navstivbrod.cz/sitemap.xml
