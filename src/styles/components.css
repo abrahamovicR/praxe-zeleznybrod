@@ -67,7 +67,7 @@ main {
     .dropdown-content {
         position: absolute;
         left: -10px;
-        top: calc(86px - 1rem);
+        top: calc(78px - 1rem);
     }
 }
 
