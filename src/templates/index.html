@@ -11,25 +11,92 @@
   <meta name="robots" content="index,follow">
   <meta name="description"
     content="Oficiální turistický portál Železného Brodu. Najděte tipy na výlety, kulturní program, zajímavosti, historii města a praktické informace pro návštěvníky i obyvatele.">
-  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" >
-  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" >
-  <link rel="shortcut icon" href="/favicon/favicon.ico" >
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" >
-  <meta name="apple-mobile-web-app-title" content="navstivbrod.cz" >
-  <link rel="manifest" href="/favicon/site.webmanifest" >
-  <title>Hlavní stránka | navstivbrod.cz</title>
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="navstivbrod.cz">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <title>Navštiv Brod | navstivbrod.cz</title>
 </head>
 
 <body>
-  {% include "templates/partials/header.html" %}
+
+  <header class="c-header">
+    <div class="header__content">
+      <a href="/index.html" class="logo a">
+        <img src="/img/logo-bright.svg" alt=" Logo Železný Brod s věží">
+        <div class="logo__title">
+          <h1>Navštiv Železný Brod</h1>
+          <p>Neoficiální web města Železný Brod</p>
+        </div>
+      </a>
+      <div class="hamburger-row">
+        <button class="hamburger hamburger-btn hamburger-zone" aria-label="Otevřít hlavní menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="hamburger-nav hamburger-zone">
+        <menu>
+          <li class="hamburger-content">
+            <a href="/omeste.html" class="  header__link a">
+              O městě
+            </a>
+          </li>
+          <li class="hamburger-content dropdown">
+            <button class="a header__link dropdown-toggle header__link-btn">
+              Tipy na výlet
+              <img src="/img/dropdown.svg" alt="Ikonky šipky pro rozbalovací nabídku" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="/besedicke_skaly.html" class="a header__link">Besedické skály</a></li>
+              <li><a href="/bozkovske_jeskyne.html" class="a header__link">Bozkovské dolomitové jeskyně</a>
+              </li>
+              <li><a href="/koberovy.html" class="a header__link">Koberovy</a></li>
+              <li><a href="/kozakov.html" class="a header__link">Kozákov</a></li>
+              <li><a href="/greenway_jizera.html" class="a header__link">Greenway Jizera</a></li>
+
+            </ul>
+          </li>
+          <li class="hamburger-content">
+            <a href="/kultura.html" class="  a header__link">
+              Kultura
+            </a>
+          </li>
+          <li class="hamburger-content dropdown">
+            <button href="#" class="  a header__link dropdown-toggle header__link-btn">
+              Služby
+              <img src="/img/dropdown.svg" alt="Ikonky šipky pro rozbalovací nabídku" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="/obchody.html" class="a header__link">Obchody</a></li>
+              <li><a href="/restaurace.html" class="a header__link">Restaurace</a></li>
+              <li><a href="/zajmy.html" class="a header__link">Zájmy</a></li>
+              <li><a href="/vzdelani.html" class="a header__link">Vzdělání</a></li>
+              <li><a href="/ubytovani.html" class="a header__link">Ubytování</a></li>
+              <li><a href="/verejne_sluzby.html" class="a header__link">Věřejné služby</a></li>
+              <li><a href="/ostatni.html" class="a header__link">Ostatní</a></li>
+
+            </ul>
+          </li>
+          <li class="hamburger-content">
+            <a href="/kontakty.html" class="  a header__link">
+              Kontakty
+            </a>
+          </li>
+        </menu>
+      </nav>
+    </div>
+  </header>
 
   <main class="main">
     <div class="hero">
       <img src="/img/radnice.webp" alt="Pohled na radnici" class="c-image hero__image"
-        srcset="/img/radnice720.webp 720w, /img/radnice1280.webp 1280w, /img/radnice1920.webp 1920w"
-        sizes="100vw">
+        srcset="/img/radnice720.webp 720w, /img/radnice1280.webp 1280w, /img/radnice1920.webp 1920w" sizes="100vw">
       <div class="hero__title">
-        <h1>Železný Brod</h1>
+        <h2 class="h1">Železný Brod</h2>
         <p>Skleněné srdce Jizerských hor</p>
       </div>
     </div>
@@ -82,8 +149,8 @@
         </div>
 
         <div class="c-news c-news__index">
-          <a href="/oznameni_preruseni_dodavky_elektriny.html"><img src="/img/electrical.svg"
-              alt="Znak elektřiny" class="c-image news__image"></a>
+          <a href="/oznameni_preruseni_dodavky_elektriny.html"><img src="/img/electrical.svg" alt="Znak elektřiny"
+              class="c-image news__image"></a>
           <div class="news__text">
             <a class="h2 a" href="/oznameni_preruseni_dodavky_elektriny.html">Oznámení o přerušení dodávky elektrické
               energie</a>
@@ -97,8 +164,8 @@
         </div>
 
         <div class="c-news c-news__index">
-          <a href="/omezeni_dobijeci_stanice.html"><img src="/img/charging-pump.svg"
-              alt="Znak dobíjecí stanice" class="c-image news__image"></a>
+          <a href="/omezeni_dobijeci_stanice.html"><img src="/img/charging-pump.svg" alt="Znak dobíjecí stanice"
+              class="c-image news__image"></a>
           <div class="news__text">
             <a class="h2 a" href="/omezeni_dobijeci_stanice.html">Omezení dobíjecí stanice pro
               elektromobily</a>
